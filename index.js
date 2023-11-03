@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser')
 const path = require('path')
-mongoose.connect("mongodb://127.0.0.1:27017/contactmember", {}).then((dd) => {
+mongoose.connect("mongodb+srv://prasanth:20@database1.spxe3wy.mongodb.net/contactdetails", {}).then((dd) => {
     console.log("mongodb connected")
 })
 app.set("view engine", "ejs")
