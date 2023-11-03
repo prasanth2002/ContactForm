@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        .logo {
+            width: 150px;
+
+        }
+
+        .logo img {
+            width: 100px;
+
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            font-family: 'Raleway', sans-serif;
+            font-size: x-large;
+        }
+
+        .bgimg {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+
+        }
+
+        .img {
+            width: 80%;
+            height: 700px;
+            background-color: orange;
+            margin: 0%;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .img-2 {
+            position: relative;
+            float: right;
+            margin-right: 10px;
+            width: 50%;
+            height: 550px;
+            background-color: rgb(235, 234, 233);
+            border-radius: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        .heading-2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: large;
+        }
+
+        .icon {
+            position: absolute;
+            padding-left: 15px;
+        }
+
+        .icon span {
+            padding-left: 15px;
+            font-size: 1vw;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        .icon img {
+            width: 40px;
+        }
+
+        .icon-2 {
+            position: absolute;
+            padding-left: 15px;
+            padding-top: 100px;
+        }
+
+        .icon-2 span {
+            padding-left: 15px;
+            padding-bottom: 10px;
+            font-size: 1vw;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        .icon-2 img {
+            width: 40px;
+        }
+
+        .icon-3 {
+            position: absolute;
+            padding-left: 15px;
+            padding-top: 200px;
+        }
+
+        .icon-3 span {
+            padding-left: 15px;
+            padding-bottom: 10px;
+            font-size: 1vw;
+            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        .icon-3 img {
+            width: 40px;
+        }
+
+        .icon-4 {
+            position: absolute;
+            padding-left: 15px;
+            padding-top: 280px;
+        }
+
+        .icon-4 iframe {
+            width: 30vw;
+            height: 300px;
+        }
+
+        form input {
+            max-width: 100%;
+            margin-top: 40px;
+            width: 35vw;
+            height: 50px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+        }
+
+
+
+        form input[type=text] {
+            padding: 0px 15px;
+        }
+
+        form input[type=number] {
+            padding: 0px 15px;
+        }
+
+        form input[type=message] {
+            padding: 0px 15px;
+        }
+
+        form input:focus {
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        .button {
+            margin-top: 30px;
+            width: 10vw;
+            height: 5vh;
+            transition: all 0.5s;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: black;
+            color: wheat;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .icon {
+                width: 250px;
+            }
+
+            .icon span {
+
+                font-size: 3vw;
+            }
+
+            .icon-2 {
+                padding-left: 23px;
+                width: 200px;
+            }
+
+            .icon-2 span {
+
+                font-size: 3vw;
+            }
+
+            .icon-3 {
+
+                width: 200px;
+            }
+
+            .icon-3 span {
+
+                font-size: 3.5vw;
+            }
+
+            .icon-4 iframe {
+                width: 70vw;
+
+            }
+
+            .img-2 {
+                position: relative;
+                top: 700px;
+                width: 500px;
+                background-color: rgb(223, 223, 217);
+            }
+
+            .button {
+                width: 100px;
+            }
+
+
+        }
+
+        @media only screen and (min-width: 481px) and (max-device-width : 750px) {
+
+
+
+            .icon {
+                padding-left: 100px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                width: 300px;
+                align-items: center;
+
+
+
+            }
+
+            .icon span {
+
+                font-size: 2vw;
+            }
+
+            .icon-2 {
+                padding-left: 100px;
+                display: flex;
+                justify-content: center;
+
+                align-items: center;
+
+            }
+
+            .icon-2 span {
+                margin-left: 10px;
+                font-size: 2vw;
+            }
+
+            .icon-3 {
+                padding-left: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+             
+
+            }
+
+            .icon-3 span {
+                margin-left: 10px;
+                font-size: 2vw;
+            }
+
+            .icon-4 iframe {
+                width: 70vw;
+
+            }
+
+            .img-2 {
+                position: relative;
+                top: 700px;
+                width: 100%;
+                background-color: rgb(223, 223, 217);
+            }
+
+            .button {
+                width: 100px;
+            }
+
+
+        }
+
+
+        @media only screen and (min-width : 751px) and (max-width : 954px) {
+
+            .icon {
+                width: 300px;
+            }
+
+            .icon span {
+
+                font-size: 2vw;
+            }
+
+            .icon-2 {
+                margin-left: 20px;
+
+            }
+
+            .icon-2 span {
+
+                font-size: 2vw;
+            }
+
+            .icon-3 {
+                margin-left: 20px;
+
+            }
+
+            .icon-3 span {
+
+                font-size: 2vw;
+            }
+
+            .icon-4 iframe {
+                width: 280px;
+
+            }
+        }
+    </style>
+</head>
+
+
+<div class="heading">
+    <h1> Contact Form</h1>
+</div>
+
+<div class="bgimg">
+
+    <div class="img">
+
+        <div class="heading-2">
+            <h1> Get In Touch</h1>
+        </div>
+
+        <div class="icon">
+            <img src="location.png" />
+            <span> Tirumal Nagar, Poonamallee, Chennai, Tamil Nadu 600056</span>
+        </div>
+
+        <div class="icon-2">
+            <img src="gmail.png" />
+            <span>Pawshop@gmail.com</span>
+        </div>
+
+        <div class="icon-3">
+            <img src="phone.png" />
+            <span>91+ 7904195381</span>
+        </div>
+
+        <div class="icon-4">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62184.69399927884!2d80.07845638167655!3d13.064711697535083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261e939e4bcf1%3A0x820fa487a272af2f!2sPaws%20of%20Chennai%20(Premium%20Dog%20Store)!5e0!3m2!1sen!2sin!4v1697965341789!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <div class="img-2">
+            <form action="api/users" method="post">
+
+                <input type="text" name="name" placeholder="Enter Your Name ">
+                </br>
+                <input type="text" name="email" placeholder="Enter Your Mail-ID "></br>
+                <input type="number" name="phonenumber" placeholder="Enter Your Number "></br>
+                <input type="message" placeholder="Message (optional) "></br>
+
+
+                <button type="submit" class="button" role="button">Button 23</button>
+
+
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>
